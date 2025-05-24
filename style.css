@@ -1,0 +1,265 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+div.margin {
+    width: 100%;
+}
+
+.wrapper {
+    padding: 0 100px;
+}
+
+header.head {
+    width: 100%;
+}
+
+div.navbar {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    list-style: none;
+    width: 25%;
+    align-items: center;
+    gap: 30px;
+    padding: 15px;
+    border-radius: 35px;
+    width: min-content;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.navbar ul li:hover {
+    padding: 1px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: black;
+}
+
+div.logo {
+    position: sticky;
+    top: 0;
+    height: 90px;
+    display: flex;
+}
+
+div.logo img {
+    border-radius: 50%;
+}
+
+div.con {
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.content h1 {
+    font-size: 50px;
+}
+
+div.pic img {
+    width: 370px;
+    border-radius: 10%;
+    transform: rotate(5deg);
+}
+
+div.links {
+    padding-top: 50px;
+    width: 190px;
+    display: flex;
+    justify-content: space-between
+}
+
+div.links img {
+    width: 25px;
+}
+
+div.projects {
+    height: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.pro1 {
+    width: 200px;
+    border-radius: 50px;
+}
+
+.pro1 img {
+    width: 30px;
+}
+
+.pro1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.read {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    padding-top: 100px;
+    border-radius: 50px;
+    height: 200px;
+}
+
+div.article:hover {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgb(244, 243, 243);
+}
+
+.read a {
+    text-decoration: none;
+    color: green;
+}
+
+.social {
+    width: 80%;
+    height: 200px;
+}
+
+.details {
+    background-color: rgb(235, 255, 247);
+    width: 40%;
+    border-radius: 10%;
+    padding: 20px;
+}
+
+.details img {
+    width: 20px;
+}
+
+.insta a {
+    padding-top: 20px;
+    text-decoration: none;
+}
+
+.insta img {
+    padding-top: 20px;
+}
+
+div.about {
+    padding-top: 80px;
+    height: 380px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.phone{
+    display: inline;
+    flex-direction: column;
+}
+
+div.photo img {
+    width: 250px;
+    border-radius: 20% 40% 10%;
+}
+
+.contact {
+    background-color: beige;
+    width: 100%;
+    padding-top: 30px;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.number {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 20px;
+}
+
+a.mail {
+    text-decoration: none;
+    tab-size: 20px;
+    color: rgb(228, 15, 15);
+}
+
+footer ul {
+    margin: auto;
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 20px;
+}
+
+div.footer {
+    background-color: beige;
+    width: 100%;
+    padding-left: 10px;
+    height: 80px;
+}
+
+div.top {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.defenition {
+    padding-top: 30px;
+    width: 100%;
+    height: 700px;
+}
+
+.defenition abbr {
+    text-decoration: none;
+}
+
+a.button {
+    height: 100px;
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+    color: black;
+    padding: 10px;
+}
+
+div.shots {
+    width: 100%;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+    ;
+    height: 550px;
+    padding-top: 50px;
+}
+
+div.shots img {
+    height: 150px;
+}
+
+div.cdu {
+    width: 100%;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+    ;
+    height: 500px;
+    padding-top: 50px;
+}
+
+div.cdu img {
+    height: 230px;
+}
