@@ -38,7 +38,8 @@ div.navbar {
 }
 
 .navbar ul li:hover {
-    padding: 1px;
+    padding: 5px;
+    transition: all ease-in-out .6s;
 }
 
 .navbar li a {
@@ -47,7 +48,7 @@ div.navbar {
 }
 
 div.logo {
-    position: sticky;
+    position: sticky ;
     top: 0;
     height: 90px;
     display: flex;
@@ -85,6 +86,12 @@ div.links img {
     width: 25px;
 }
 
+div.links img:hover {
+    transition: transform .3s ease;
+    transform: scale(1.2);
+
+}
+
 div.projects {
     height: 200px;
     padding-top: 50px;
@@ -95,7 +102,7 @@ div.projects {
     grid-gap: 20px;
 }
 
-.pro1 {
+.p .pro1 {
     width: 200px;
     border-radius: 50px;
 }
@@ -120,8 +127,10 @@ div.projects {
 
 div.article:hover {
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 30px;
     background-color: rgb(244, 243, 243);
+    transform: scale(1.02);
+    transition: transform 1.6s ease;
 }
 
 .read a {
@@ -145,7 +154,7 @@ div.article:hover {
     width: 20px;
 }
 
-.insta a {
+a.insta {
     padding-top: 20px;
     text-decoration: none;
 }
@@ -156,12 +165,15 @@ div.article:hover {
 
 div.about {
     padding-top: 80px;
-    height: 380px;
+    height: 400px;
     display: flex;
     justify-content: space-between;
 }
-
-div.phone{
+a.button {
+    width: 80px;
+    border-radius: 20%;
+}
+div.phone {
     display: inline;
     flex-direction: column;
 }
@@ -197,6 +209,7 @@ footer ul {
     display: flex;
     list-style: none;
     width: 40%;
+    padding: 10px;
     justify-content: space-between;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
@@ -206,7 +219,6 @@ footer ul {
 div.footer {
     background-color: beige;
     width: 100%;
-    padding-left: 10px;
     height: 80px;
 }
 
