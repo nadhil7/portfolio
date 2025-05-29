@@ -189,9 +189,14 @@ div.colo{
     flex-direction: column;
     gap: 20px  ;
 }
-div.phone {
+div.phone h1{
     display: inline;
+}
+div.phone {
+    display: flex;
     flex-direction: column;
+    gap: 15px;
+
 }
 
 div.photo img {
