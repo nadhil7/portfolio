@@ -17,8 +17,10 @@ header.head {
 }
 
 div.navbar {
-    padding: 20px;
+    width: 100%;
+    height: 80px;
     display: flex;
+    padding-top: 20px;
     justify-content: center;
 }
 
@@ -27,12 +29,11 @@ div.navbar {
     position: fixed;
     display: flex;
     list-style: none;
-    width: 25%;
+    width: 280px;
     align-items: center;
     gap: 30px;
-    padding: 15px;
+    padding: 20px 15px;
     border-radius: 35px;
-    width: min-content;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
@@ -48,9 +49,9 @@ div.navbar {
 }
 
 div.logo {
-    position: sticky ;
+    position: sticky;
     top: 0;
-    height: 90px;
+    height: 70px;
     display: flex;
 }
 
@@ -59,8 +60,10 @@ div.logo img {
 }
 
 div.con {
-    padding-top: 30px;
+    margin-top: 30px;
     width: 100%;
+    height: 350px;
+    gap: 30px;
     display: flex;
     justify-content: space-between;
 }
@@ -76,7 +79,7 @@ div.pic img {
 }
 
 div.links {
-    padding-top: 50px;
+    padding-top: 30px;
     width: 190px;
     display: flex;
     justify-content: space-between
@@ -94,8 +97,6 @@ div.links img:hover {
 
 div.projects {
     height: 200px;
-    padding-top: 50px;
-    padding-bottom: 50px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -116,22 +117,6 @@ div.projects {
     color: black;
 }
 
-.read {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 40px;
-    padding-top: 100px;
-    border-radius: 50px;
-    height: 200px;
-}
-
-div.article:hover {
-    padding: 30px;
-    border-radius: 30px;
-    background-color: rgb(244, 243, 243);
-    transform: scale(1.02);
-    transition: transform 1.6s ease;
-}
 
 .read a {
     text-decoration: none;
@@ -143,32 +128,12 @@ div.article:hover {
     height: 200px;
 }
 
-.details {
-    background-color: rgb(235, 255, 247);
-    width: 40%;
-    border-radius: 10%;
-    padding: 20px;
-}
-
-.details img {
-    width: 20px;
-}
-
-a.insta {
-    padding-top: 20px;
-    text-decoration: none;
-}
-
-.insta img {
-    padding-top: 20px;
-}
-
 div.about {
-    padding-top: 80px;
     height: 400px;
     display: flex;
     justify-content: space-between;
 }
+
 a.button1 {
     width: 60px;
     text-decoration: none;
@@ -178,25 +143,35 @@ a.button1 {
     color: black;
     border-radius: 15px;
 }
-a.button1:hover{
+
+a.button1:hover {
     background-color: rgb(0, 0, 0);
     color: white;
     transition: 0.5s ease-in;
 }
-div.colo{
+
+div.colo {
     padding-top: 50px;
     display: flex;
     flex-direction: column;
-    gap: 20px  ;
+    gap: 20px;
 }
-div.phone h1{
+
+div.phone h1 {
     display: inline;
 }
+
 div.phone {
+    width: 400px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     gap: 15px;
 
+}
+
+div.phone p {
+    font-weight: 40px;
 }
 
 div.photo img {
@@ -213,6 +188,11 @@ div.photo img {
     justify-content: space-evenly;
 }
 
+div.gmap iframe {
+    width: 250px;
+    height: 150px;
+}
+
 .number {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -225,22 +205,30 @@ a.mail {
     color: rgb(228, 15, 15);
 }
 
-footer ul {
-    margin: auto;
+div.navbar1 {
+    width: 100%;
+    height: 50px;
     display: flex;
-    list-style: none;
-    width: 40%;
-    padding: 10px;
-    justify-content: space-between;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    border-radius: 20px;
+    padding-bottom: 30px;
+    justify-content: center;
+    background-color: beige;
 }
 
-div.footer {
-    background-color: beige;
-    width: 100%;
-    height: 80px;
+.navbar1 ul {
+    display: flex;
+    list-style: none;
+    width: 280px;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 15px;
+    border-radius: 35px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.navbar1 ul li a {
+    text-decoration: none;
+    color: black;
 }
 
 div.top {
@@ -251,7 +239,7 @@ div.top {
 .defenition {
     padding-top: 30px;
     width: 100%;
-    height: 700px;
+    height: 720px;
 }
 
 .defenition abbr {
@@ -288,11 +276,349 @@ div.cdu {
     grid-gap: 50px;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-evenly;
-    ;
-    height: 500px;
+    height: 530px;
     padding-top: 50px;
 }
 
 div.cdu img {
     height: 230px;
+}
+
+@media all and (max-width:1280px) {
+    div.pic img {
+        width: 320px;
+    }
+
+    div.content h1 {
+        font-size: 40px;
+    }
+
+    div.photo img {
+        width: 220px;
+    }
+}
+
+@media all and (max-width:1024px) {
+
+    div.pic img {
+        width: 250px;
+    }
+
+    div.content h1 {
+        font-size: 35px;
+    }
+
+    div.photo img {
+        width: 180px;
+    }
+}
+
+@media all and (max-width:768px) {
+    .wrapper {
+        padding: 0 50px;
+    }
+
+    div.pic img {
+        width: 210px;
+    }
+
+    div.content h1 {
+        font-size: 30px;
+    }
+
+    div.projects {
+        padding-bottom: 50px;
+    }
+
+    div.photo img {
+        width: 160px;
+    }
+
+    div.gmap iframe {
+        width: 200px;
+        height: 150px;
+    }
+}
+
+@media all and (max-width:640px) {
+    .wrapper {
+        padding: 0 40px;
+    }
+
+    div.pic img {
+        width: 180px;
+    }
+
+    div.links {
+        padding-top: 20px;
+        width: 170px;
+    }
+
+    div.links img {
+        width: 25px;
+    }
+
+    div.projects {
+        height: 240px;
+    }
+
+    div.phone {
+        width: 280px;
+        height: 150px;
+    }
+
+    div.gmap iframe {
+        width: 170px;
+        height: 130px;
+    }
+
+    div.navbar {
+        width: 100%;
+        height: 60px;
+    }
+
+    .navbar ul {
+        padding: 10px 10px;
+    }
+
+    .navbar1 ul {
+        padding: 10px 10px;
+    }
+
+    div.con {
+        margin-top: 30px;
+        width: 100%;
+        height: 230;
+    }
+
+    div.phone h1 {
+        font-size: 20px;
+    }
+
+    div.colo {
+        gap: 5px;
+        padding-top: 25px;
+        height: 135px;
+    }
+
+    div.logo {
+        height: 50px;
+    }
+
+    div.about p {
+        font-size: 15x;
+    }
+
+    div.pic img {
+        width: 130px;
+    }
+
+    .contact {
+        height: 180px;
+    }
+
+    a.button1 {
+        padding: 13px 14px;
+    }
+
+    div.about {
+        height: 350px;
+    }
+
+    div.navbar1 {
+        padding-bottom: 10px;
+    }
+}
+
+@media all and (max-width:640px) {
+    .wrapper {
+        padding: 0 30px;
+    }
+
+    div.navbar {
+        width: 100%;
+        height: 50px;
+    }
+
+    .navbar ul {
+        padding: 8px 8px;
+    }
+
+    .navbar ul li a {
+        font-size: 15px;
+    }
+
+    div.logo {
+        height: 40px;
+    }
+
+    div.con {
+        height: 330px;
+    }
+
+    div.con h1 {
+        font-size: 25px;
+    }
+
+    div.con p {
+        font-size: 15px;
+    }
+
+    div.links {
+        padding-top: 15px;
+    }
+
+    div.projects {
+        height: 200px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    div.about h1 {
+        font-size: 21px;
+    }
+
+    div.about p {
+        font-size: 14px;
+    }
+
+    div.colo {
+        padding-top: 16px;
+    }
+
+    div.contact {
+        gap: 10px;
+        height: 150px;
+    }
+
+    div.phone h1 {
+        height: 20px;
+        padding-top: 0px;
+        font-size: 13px;
+    }
+
+    div.phone p {
+        font-size: 12px;
+        gap: 9px;
+    }
+
+    a.mail {
+        font-size: 12px;
+    }
+
+    div.gmap iframe {
+        width: 170px;
+        height: 110px;
+    }
+
+    div.navbar1 {
+        width: 100%;
+        height: 50px;
+    }
+
+    .navbar1 ul li a {
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width:360px) {
+    div.logo {
+        padding-top: 30px;
+    }
+
+    .navbar ul{
+        gap:10px; 
+        justify-content: center;
+        width: 180px;
+    }
+
+    ul.navbar li a {
+        font-size: 12px;
+    }
+
+    div.con {
+        height: 300px;
+    }
+
+    div.con p {
+        font-size: 12px;
+    }
+
+    div.pic img {
+        width: 120px;
+    }
+
+    div.projects {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .pro1 p {
+        font-size: 13px;
+    }
+
+    div.about {
+        padding-bottom: 30px;
+    }
+
+    div.about h1 {
+        font-size: 17px;
+    }
+
+    div.about p {
+        font-size: 13px;
+    }
+
+    div.photo {
+        width: 130px;
+        height: 200px;
+    }
+
+    div.photo img {
+        width: 130px;
+    }
+
+    div.colo {
+        padding-top: 10px;
+        height: 125px;
+    }
+
+    div.colo b {
+        font-size: 12px;
+    }
+
+    a.button1 {
+        padding: 8px 8px;
+    }
+
+    div.contact {
+        gap: 10px;
+        height: 300px;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    div.phone {
+        width: 250px;
+        padding-left: 30px;
+    }
+
+    div.gmap {
+        padding-left: 30px;
+        width: 150px;
+    }
+
+    .navbar1 ul {
+        height: 20px;
+    }
+
+    .navbar1 ul li {
+        padding: 4px 4px;
+    }
+
+    .navbar1 ul li a {
+        font-size: 13px;
+    }
 }
