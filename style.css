@@ -528,8 +528,8 @@ div.cdu img {
         padding-top: 30px;
     }
 
-    .navbar ul{
-        gap:10px; 
+    .navbar ul {
+        gap: 10px;
         justify-content: center;
         width: 180px;
     }
@@ -540,6 +540,7 @@ div.cdu img {
 
     div.con {
         height: 300px;
+        gap: 20px;
     }
 
     div.con p {
@@ -620,5 +621,66 @@ div.cdu img {
 
     .navbar1 ul li a {
         font-size: 13px;
+    }
+}
+
+@media all and (max-width:340px) {
+    .wrapper {
+        padding: 0 20px;
+    }
+
+    div.logo {
+        padding-top: 20px;
+    }
+    div.con{
+        height: 220px;
+    }
+    div.con h1 {
+        font-size: 23px;
+    }
+
+    div.con p {
+        font-size: 11px;
+    }
+
+    div.pic img {
+        width: 100px;
+    }
+    .pro1{
+        padding-top: 6px;
+        padding-left: 6px;
+    }
+    .pro1 h1{
+        font-size: 20px;
+    }
+    .pro1 p{
+        font-size: 11px;
+    }
+    div.projects{
+        height: 150px;
+        padding-top: 30px;
+        padding-bottom: 0px;
+    }
+    div.about{
+        padding-top: 50px;
+        gap: 20px;
+        height: 310px;
+        padding-bottom: 0px;
+    }
+    div.about p{
+        font-size: 11px;
+    }
+    a.button1{
+        padding: 5px;
+        font-size: 14px;
+    }
+    div.contact{
+        padding-top: 10px;
+        height: 250px;
+    }
+}
+@media all and (max-width:320px) {
+    div.about{
+        height: 340px;
     }
 }
